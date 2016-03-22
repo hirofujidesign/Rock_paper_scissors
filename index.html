@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Rock Paper Scissors</h1>
+		</div>
+		<div class = "form">
+			<form>
+			<input type="text" name="name" placeholder="Name" id="playerNameInput"><br>
+			<input type="submit" name="submit" class="playerSubmit">
+			</form>
+		</div>
+		<div class= "game">
+		<br>
+			<div class = "col-md-4" id = "playerOne">
+				<h3 id="1">Waiting for Player One</h3>
+				<div class="playerOneWindow">
+					<h2 id="playerOneName"></h2>
+					<br>
+					<div id="playerOneChoices"></div>
+				</div>
+			</div>
+			<div class = "col-md-4" id = "status">
+				<h2>Game</h2>
+				<div class = "status">
+				</div>
+				<br>
+			</div>
+			<div class = "col-md-4" id = "playerTwo">
+				<h3 id="2">Waiting for Player Two</h3>
+				<div class = "playerTwoWindow">
+					<h2 id="playerTwoName"></h2>
+					<br>
+					<div id="playerTwoChoices"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+</body>
+<script src="assets/javascript/game2.js"></script>
+</html>
